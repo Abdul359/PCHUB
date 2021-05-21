@@ -1,0 +1,82 @@
+.ownpc {
+	width: 95%;
+	margin: 20px auto 60px auto;
+	max-width: 800px;
+}
+.build__guide {
+	padding: 10px;
+	margin-bottom: 20px;
+	transition: ease-out 0.3s opacity;
+}
+.build__child {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.build__child img {
+	margin-right: 30px;
+	width: 30%;
+	max-width: 80px;
+	border-radius: 5px;
+}
+.build__guide__title {
+	font-size: 1.2rem;
+	border-bottom: 1px solid #999;
+	padding: 5px 0;
+	margin-bottom: 20px;
+}
+.user__property {
+	font-size: 1rem;
+	color: salmon;
+	font-weight: 600;
+	display: block;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.select__item__btn {
+	display: inline-block;
+	border: 1px solid #fff;
+	padding: 7px 21px;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	transition: all ease 0.5s;
+}
+.select__item__btn:hover,
+.select__item__btn:focus {
+	outline: 1px solid #fff;
+	outline-offset: 5px;
+	font-weight: 600;
+}
+.select__item__btn i {
+	margin-right: 5px;
+}
+.set__border {
+	border: 2px solid #fff;
+	transition: ease all 0.5s;
+}
+@media (min-width: 600px) {
+	.build__guide {
+		padding: 20px;
+	}
+	.build__guide__title {
+		font-size: 1.5rem;
+		margin-bottom: 30px;
+	}
+	.user__property {
+		font-size: 1.2rem;
+	}
+	.select__item__btn {
+		padding: 10px 30px;
+		font-size: 1rem;
+		margin-bottom: 20px;
+	}
+	.set__border {
+		border: 3px solid #fff;
+	}
+	.build__child img {
+		width: 20%;
+		max-width: 100px;
+		max-height: 100px;
+	}
+}

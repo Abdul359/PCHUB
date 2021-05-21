@@ -1,0 +1,144 @@
+.property__section {
+	width: 95vw;
+	max-width: 1400px;
+	margin: 20px auto;
+}
+.property__section__title {
+	border-bottom: 1px solid rgb(153, 153, 153, 0.2);
+	padding: 10px;
+	width: 95%;
+	margin-left: 10px;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	position: relative;
+}
+.property__section__child {
+	display: flex;
+	overflow: hidden;
+	overflow-x: scroll;
+	transition: 0.5s ease-in-out all;
+}
+.property__section__fader {
+	width: 100%;
+	position: relative;
+}
+.scroll__fader {
+	pointer-events: none;
+	display: none;
+	position: absolute;
+	height: 100%;
+	background: linear-gradient(
+		to left,
+		#191919,
+		rgba(25, 25, 25, 1),
+		rgba(25, 25, 25, 1),
+		rgba(25, 25, 25, 0.8),
+		transparent,
+		transparent
+	);
+	width: 15%;
+	right: -10px;
+	max-width: 150px;
+}
+.property__section__child::-webkit-scrollbar {
+	display: none;
+}
+.child__instance {
+	border: 1px solid rgba(153, 153, 153, 0.1);
+	border-radius: 10px;
+	flex-shrink: 0;
+	padding: 20px;
+	width: 95%;
+	max-width: 400px;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.2);
+	transition: 0.3s ease-in all;
+}
+.child__instance:nth-child(1) {
+	margin-left: 10px;
+}
+.child__instance__img {
+	border-radius: 10px;
+	max-width: 100px;
+	max-height: 100px;
+	width: 25vw;
+	height: 25vw;
+	margin-right: 20px;
+}
+.info__parent {
+	display: flex;
+	border-bottom: 1px solid rgba(153, 153, 153, 0.5);
+	padding-bottom: 10px;
+}
+.info__child {
+	padding: 0 10px;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+}
+.info__child__key {
+	display: block;
+	padding-bottom: 10px;
+	font-weight: 600;
+	color: #999;
+}
+.info__child__value {
+	display: block;
+}
+.info__btn__group {
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-start;
+}
+.info__btn {
+	padding: 5px 15px;
+	cursor: pointer;
+	outline: none;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	margin-left: 10px;
+	transition: 0.3s;
+	font-size: 0.6rem;
+}
+.info__btn:nth-child(1) {
+	margin-left: 0;
+}
+.info__btn:hover,
+.info__btn:focus {
+	color: #000;
+	background: #fff;
+}
+
+@media (min-width: 500px) {
+	.property__section__title {
+		font-size: 1.7rem;
+	}
+	.arrow {
+		font-size: 1.5rem;
+	}
+	.property__section__fader {
+		/* border-top: 1px solid rgb(153, 153, 153, 0.2);
+		border-bottom: 1px solid rgb(153, 153, 153, 0.2); */
+	}
+	.child__instance {
+		padding: 30px;
+		max-width: 450px;
+	}
+	.scroll__fader {
+		display: block;
+	}
+	.info__child {
+		font-size: 1rem;
+	}
+	.info__btn {
+		font-size: 0.8rem;
+	}
+}
+@media (min-width: 800px) {
+	.child__instance:hover {
+		transform: scale(1.02);
+		box-shadow: 0px 0px 12px 2px rgba(153, 153, 153, 0.2);
+	}
+}

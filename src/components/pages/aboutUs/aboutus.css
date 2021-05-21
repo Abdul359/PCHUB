@@ -1,0 +1,112 @@
+.aboutus {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 800px;
+}
+.aboutus__who {
+	margin: 10px 0;
+	line-height: 1.5;
+	padding: 10px;
+}
+.who__title {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 10px;
+	border-bottom: 1px solid salmon;
+	color: salmon;
+}
+.who__title i {
+	color: salmon;
+	margin-right: 5px;
+}
+.who__info {
+	max-width: 60ch;
+	font-size: 0.8rem;
+}
+.aboutus__what {
+	margin: 10px 0;
+	line-height: 1.5;
+	padding: 10px;
+}
+.what__title {
+	padding: 10px 0;
+	font-weight: 600;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #fff;
+}
+.what__info {
+	max-width: 60ch;
+	line-height: 1.5;
+	font-size: 0.8rem;
+}
+.who__mails {
+	font-size: 0.8rem;
+	padding: 10px;
+}
+.mail__title {
+	color: salmon;
+	padding: 5px 0;
+	margin: 10px 0;
+	border-bottom: 1px solid salmon;
+	text-transform: uppercase;
+}
+.mail__title i {
+	color: salmon;
+	margin-right: 5px;
+}
+.person {
+	padding: 5px 0;
+	text-transform: uppercase;
+}
+.person a {
+	border: 2px solid transparent;
+	cursor: pointer;
+	display: inline-block;
+	padding: 5px 15px;
+	margin-right: 5px;
+	font-weight: 600;
+	transition: 0.5s;
+}
+.person a:hover,
+.person a:focus {
+	border: 2px solid #fff;
+}
+.person i {
+	margin: 5px;
+	color: salmon;
+}
+.person span {
+	color: salmon;
+}
+@media (min-width: 600px) {
+	.who__info {
+		max-width: 60ch;
+		font-size: 1rem;
+	}
+	.who__title {
+		font-size: 2rem;
+	}
+	.who__mails {
+		font-size: 1rem;
+	}
+	.mail__title {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 900px) {
+	.aboutus {
+		margin: 20px auto;
+	}
+	.who__info {
+		max-width: 60ch;
+		font-size: 1.1rem;
+	}
+	.who__title {
+		font-size: 2rem;
+		margin-bottom: 20px;
+	}
+	.who__mails {
+		font-size: 1.1rem;
+	}
+}

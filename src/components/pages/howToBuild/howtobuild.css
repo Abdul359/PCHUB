@@ -1,0 +1,140 @@
+.howToBuild {
+	width: 95%;
+	margin: 0 auto 20px auto;
+	max-width: 800px;
+	line-height: 1.5;
+}
+.howToBuild__title {
+	padding: 5px 0;
+	border-bottom: 1px solid salmon;
+	color: salmon;
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+.build__info__labels {
+	color: salmon;
+	text-transform: uppercase;
+	border-bottom: 1px solid salmon;
+	margin-top: 10px;
+	font-size: 600;
+}
+.build__info__p {
+	margin-bottom: 10px;
+	font-size: 0.8rem;
+	padding: 10px;
+}
+.build__caution {
+	padding: 10px;
+	font-weight: 600;
+}
+.build__info__labels__caution {
+	color: red;
+	font-weight: 2rem;
+	border: none;
+	padding-left: 20px;
+	border-left: 4px solid red;
+}
+.build__info__p__caution {
+	font-size: 0.8rem;
+	font-weight: 300;
+	color: rgba(255, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.build__info__p__caution i {
+	margin-right: 20px;
+	color: rgba(255, 0, 0, 0.7);
+	font-size: 2rem;
+}
+.tools {
+	color: silver;
+	display: flex;
+	text-decoration: none;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom: 1px solid silver;
+}
+.tools i {
+	color: silver;
+	margin-right: 10px;
+}
+.build__info__labels__watch {
+	color: rosybrown;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom: 1px solid rosybrown;
+}
+.build__info__labels__watch i {
+	color: rosybrown;
+	margin-left: 0;
+	margin-right: 10px;
+}
+.build__info__labels__start {
+	color: lightskyblue;
+	border-bottom: 1px solid lightskyblue;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.build__info__labels__start i {
+	color: lightskyblue;
+	margin-right: 10px;
+}
+.build__info__success span {
+	color: salmon;
+	font-size: 1.5rem;
+	margin: 0 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.gg__fun {
+	color: salmon;
+	font-size: 1.8rem;
+	padding: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-transform: uppercase;
+}
+.gg__fun i {
+	color: salmon;
+	margin-left: 20px;
+}
+@media (min-width: 600px) {
+	.howToBuild {
+		margin: 20px auto;
+	}
+	.howToBuild__title {
+		font-size: 2rem;
+	}
+
+	.build__info__labels {
+		font-size: 1.2rem;
+	}
+	.build__info__p {
+		font-size: 1rem;
+		max-width: 60ch;
+	}
+}
+@media (min-width: 900px) {
+	.howToBuild {
+		margin: 30px auto;
+	}
+	.build__info__labels {
+		font-size: 1.3rem;
+	}
+	.build__info__p {
+		font-size: 1.1rem;
+		max-width: 60ch;
+	}
+	.gg__fun {
+		font-size: 2.5rem;
+	}
+	.gg__fun i {
+		font-size: 2.5rem;
+	}
+}

@@ -1,0 +1,71 @@
+.signup {
+	padding: 40px;
+	width: 95%;
+	margin: 0 auto;
+}
+.signup__child {
+	margin: 0 auto;
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.signup__btn__group {
+	/* border: 1px solid #fff; */
+}
+.signup__btn__group p {
+	display: inline-block;
+}
+.login__btn {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	color: rgba(250, 128, 114, 0.6);
+	margin-left: 5px;
+	font-weight: 600;
+	transition: 0.5s;
+	font-size: 1rem;
+}
+.login__btn:hover,
+.login__btn:focus {
+	color: salmon;
+	text-decoration: underline;
+}
+.signup__btn {
+	cursor: pointer;
+	padding: 7px 21px;
+	border: none;
+	border: 1px solid salmon;
+	outline: none;
+	margin: 30px 0;
+	transition: 0.5s;
+	font-weight: 400;
+	color: salmon;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.signup__btn:hover,
+.signup__btn:focus {
+	border: 1px solid salmon;
+	color: #fff;
+	background: salmon;
+}
+.signup__btn:hover i,
+.signup__btn:focus i {
+	/* color: salmon; */
+	color: #fff;
+	background: salmon;
+}
+.signup__btn i {
+	margin-left: 6px;
+	color: salmon;
+	transition: 0.5s;
+}
+
+@media (min-width: 700px) {
+	.signup {
+		margin: 30px auto;
+	}
+}

@@ -1,0 +1,104 @@
+.form {
+	flex-shrink: 0;
+	width: 100%;
+	animation: animate ease 1s 1 -0.6s;
+	/* border: 1px solid #fff; */
+}
+.form__group {
+	width: 100%;
+	padding: 20px 0;
+	font-weight: 600;
+	margin: 0 auto 10px auto;
+	position: relative;
+	z-index: 4;
+}
+.form__label {
+	font-size: 1rem;
+	position: absolute;
+	top: 25px;
+	transition: 0.5s;
+	cursor: pointer;
+	color: rgba(255, 255, 255, 0.5);
+}
+.form__input {
+	color: #fff;
+	display: block;
+	outline: none;
+	margin-top: 5px;
+	width: 100%;
+	font-size: 1rem;
+	padding: 5px 2px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	font-weight: 200;
+}
+.form__input:focus ~ .form__label,
+.form__input:valid ~ .form__label {
+	font-size: 0.8rem;
+	color: #fff;
+	top: 0px;
+}
+.line {
+	border: none;
+	border-bottom: 2px solid #fff;
+	position: absolute;
+	top: 54px;
+	width: 0%;
+	transition: 0.5s ease;
+}
+.btn__group {
+	padding: 0;
+	margin: 50px 0;
+}
+.form__btn {
+	padding: 7px 21px;
+	position: relative;
+	outline: none;
+	color: #fff;
+	background: #191919;
+	border: 1px solid #fff;
+	transition: 0.5s;
+	cursor: pointer;
+	font-weight: 400;
+	z-index: 3;
+}
+.form__btn::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: -1;
+}
+.form__btn:hover,
+.form__btn:focus {
+	background: salmon /* Bhai */;
+	border: 1px solid #ef6461;
+	color: #fff;
+}
+.form__input:focus ~ .line,
+.form__input:valid ~ .line {
+	width: 100%;
+}
+@media (min-width: 700px) {
+	.form {
+		max-width: 700px;
+	}
+}
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: translateX(1000px);
+	}
+	50% {
+		opacity: 0.5;
+		transform: translateX(500px);
+	}
+	0% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}

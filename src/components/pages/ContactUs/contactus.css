@@ -1,0 +1,79 @@
+.contactus {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 900px;
+}
+.contactus__address,
+.contactus__socials {
+	margin: 10px 0;
+}
+.contactus__info,
+.socials__info {
+	margin: 20px 0;
+}
+
+.address__title,
+.socials__title {
+	color: salmon;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	padding: 5px 0;
+	font-family: 1.5rem;
+	padding: 10px 0;
+	font-weight: 600;
+	margin-bottom: 10px;
+	border-bottom: 1px solid salmon;
+}
+
+.address__title i,
+.socials__title i {
+	margin-right: 10px;
+	color: salmon;
+}
+.contactus__info__child,
+.socials__info__child {
+	font-size: 0.8rem;
+	margin: 10px 0;
+}
+.contactus__info__key,
+.socials__info__key {
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #999;
+	margin-right: 5px;
+}
+.contactus__info__value,
+.socials__info__value {
+	text-transform: uppercase;
+}
+.socials__info__handles {
+	padding: 10px 0;
+}
+.socials__info__handles i {
+	font-size: 1.5rem;
+	margin-right: 20px;
+	transition: all ease 0.5s;
+}
+.socials__info__handles i:focus,
+.socials__info__handles i:hover {
+	color: #999;
+	cursor: pointer;
+	transform: scale(0.9);
+}
+
+@media (min-width: 600px) {
+	.address__title,
+	.socials__title {
+		font-size: 2rem;
+	}
+	.socials__info__handles i {
+		margin-right: 20px;
+		font-size: 2rem;
+	}
+	.contactus__info__child,
+	.socials__info__child {
+		font-size: 1rem;
+		margin: 10px 0;
+	}
+}
